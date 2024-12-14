@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "@@@",
+    "#$#",
+    "@@@"
+  ],
+  "key": {
+    "@": [
+      "minecraft:crimson_planks",
+      "minecraft:warped_planks"
+    ],
+    "#": "minecraft:gold_ingot",
+    "$": "minecraft:ender_chest"
+  },
+  "result": {
+    "id": "minecraft:strider_spawn_egg",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "ssdp.no_barrel",
+          "ssdp.root"
+        ]
+      },
+      "minecraft:item_name": "\"Nether Barrel\"",
+      "minecraft:item_model": "ssdp:nether_barrel"
+    }
+  }
+}
