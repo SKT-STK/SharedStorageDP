@@ -1,8 +1,10 @@
 {
   "cSpell.words": [
     "Datapack",
+    "playsound",
     "setblock",
     "ssdp",
+    "stopsound",
     "tellraw"
   ]
 }

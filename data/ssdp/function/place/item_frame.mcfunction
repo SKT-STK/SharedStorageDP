@@ -1,0 +1,13 @@
+scoreboard players reset @s ssdp.placed_barrel
+
+execute store result score @s ssdp.barrel_rot.0 run data get entity @s Rotation[0]
+scoreboard players operation @s ssdp.barrel_rot.0 += %225 ssdp.CONST
+execute store result score @s ssdp.barrel_rot.1 run data get entity @s Rotation[1]
+
+execute if score @s ssdp.barrel_rot.1 matches 45.. run summon armor_stand ~ ~ ~ {Pose:{Head:[0f,0f,0f]},Rotation:[0f,0f],Fire:32767s,Invisible:1b,Small:1b,Marker:1b,Tags:["ssdp.item_frame"],ArmorItems:[{},{},{},{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"ssdp:nether_barrel"}}]}
+execute if score @s ssdp.barrel_rot.1 matches ..-44 run summon armor_stand ~ ~-.41 ~ {Pose:{Head:[180f,0f,0f]},Rotation:[0f,0f],Fire:32767s,Invisible:1b,Small:1b,Marker:1b,Tags:["ssdp.item_frame"],ArmorItems:[{},{},{},{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"ssdp:nether_barrel"}}]}
+execute if score @s ssdp.barrel_rot.1 matches -46..45 if score @s ssdp.barrel_rot.0 matches 0..90 run summon armor_stand ~ ~-.205 ~.21 {Pose:{Head:[0f,0f,-90f]},Rotation:[-90f,0f],Fire:32767s,Invisible:1b,Small:1b,Marker:1b,Tags:["ssdp.item_frame"],ArmorItems:[{},{},{},{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"ssdp:nether_barrel"}}]}
+execute if score @s ssdp.barrel_rot.1 matches -46..45 if score @s ssdp.barrel_rot.0 matches 90..180 run summon armor_stand ~-.21 ~-.205 ~ {Pose:{Head:[0f,0f,-90f]},Rotation:[0f,0f],Fire:32767s,Invisible:1b,Small:1b,Marker:1b,Tags:["ssdp.item_frame"],ArmorItems:[{},{},{},{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"ssdp:nether_barrel"}}]}
+execute if score @s ssdp.barrel_rot.1 matches -46..45 if score @s ssdp.barrel_rot.0 matches 180..270 run summon armor_stand ~ ~-.205 ~-.21 {Pose:{Head:[0f,0f,-90f]},Rotation:[90f,0f],Fire:32767s,Invisible:1b,Small:1b,Marker:1b,Tags:["ssdp.item_frame"],ArmorItems:[{},{},{},{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"ssdp:nether_barrel"}}]}
+execute if score @s ssdp.barrel_rot.1 matches -46..45 if score @s ssdp.barrel_rot.0 matches 270..360 run summon armor_stand ~.21 ~-.205 ~ {Pose:{Head:[0f,0f,-90f]},Rotation:[180f,0f],Fire:32767s,Invisible:1b,Small:1b,Marker:1b,Tags:["ssdp.item_frame"],ArmorItems:[{},{},{},{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"ssdp:nether_barrel"}}]}
+execute if score @s ssdp.barrel_rot.1 matches -46..45 if score @s ssdp.barrel_rot.0 matches 360..406 run summon armor_stand ~ ~-.205 ~.21 {Pose:{Head:[0f,0f,-90f]},Rotation:[-90f,0f],Fire:32767s,Invisible:1b,Small:1b,Marker:1b,Tags:["ssdp.item_frame"],ArmorItems:[{},{},{},{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"ssdp:nether_barrel"}}]}

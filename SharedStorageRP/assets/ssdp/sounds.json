@@ -1,0 +1,7 @@
+{
+  "block.nether_barrel.open": {
+    "sounds": [
+      "ssdp:block/nether_barrel/open/1"
+    ]
+  }
+}
