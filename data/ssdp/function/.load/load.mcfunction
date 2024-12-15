@@ -12,14 +12,10 @@ scoreboard objectives add ssdp.barrel_rot.0 dummy
 scoreboard objectives add ssdp.barrel_rot.1 dummy
 scoreboard objectives add ssdp.CONST dummy
 
-scoreboard players reset * ssdp.opened_barrel
 scoreboard players reset * ssdp.opened_barrel2
 scoreboard players reset * ssdp.placed_barrel
 scoreboard players reset * ssdp.copy_success
 scoreboard players reset * ssdp.raycast_length
-scoreboard players reset * ssdp.last_barrel.x
-scoreboard players reset * ssdp.last_barrel.y
-scoreboard players reset * ssdp.last_barrel.z
 scoreboard players reset * ssdp.barrel_rot.0
 scoreboard players reset * ssdp.barrel_rot.1
 scoreboard players reset * ssdp.CONST
