@@ -3,5 +3,10 @@
     "sounds": [
       "ssdp:block/nether_barrel/open/1"
     ]
+  },
+  "block.nether_barrel.close": {
+    "sounds": [
+      "ssdp:block/nether_barrel/close/1"
+    ]
   }
 }
